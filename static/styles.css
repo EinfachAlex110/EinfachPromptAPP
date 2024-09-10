@@ -1,0 +1,380 @@
+/* Allgemeine Einstellungen */
+body {
+    background-color: #121212; /* Schwarz als Hintergrundfarbe */
+    color: #e0e0e0; /* Hellgrau für Text */
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Zentriert nur den Text im Body */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #242D29; /* Dunkles Grünlich-Grau für den Header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6ea68f; /* Teal für Hover */
+}
+
+/* Header-Titel */
+.header-title-container {
+    text-align: center; /* Zentriert den Titel-Container */
+    margin-top: 20px; /* Abstand vom Header */
+}
+
+.header-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #6ea68f, #242D29, #e0e0e0, #6ea68f);
+    background-size: 400%;
+    background-clip: text; /* Standard */
+    -webkit-background-clip: text; /* Für Webkit-Browser */
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+/* Animation für den Farbverlauf */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Flexbox Layout für zentrale Elemente */
+.content {
+    display: flex;
+    justify-content: space-between; /* Platzierung der Elemente nebeneinander */
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap; /* Verhindert Zeilenumbruch */
+}
+
+/* Prompts Liste */
+.prompt-list {
+    flex: 2; /* Nimmt 2 Teile des verfügbaren Raums ein */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.prompt-item {
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.prompt-item:hover {
+    background-color: #242D29; /* Dunkles Grünlich-Grau für Hover */
+    border-color: #6ea68f; /* Teal für Hover */
+}
+
+.prompt-item h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #6ea68f;
+}
+
+.prompt-item button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.prompt-item button:hover {
+    background-color: #6ea68f; /* Teal für Hover */
+    color: #121212;
+}
+
+/* Prompts Details */
+.prompt-details {
+    flex: 1; /* Nimmt 1 Teil des verfügbaren Raums ein */
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    border: 1px solid #333;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.prompt-details h2 {
+    font-size: 1.5em;
+    color: #6ea68f; /* Teal Farbe */
+    margin-bottom: 20px;
+}
+
+.prompt-details label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #6ea68f; /* Teal Farbe */
+}
+
+.prompt-details input[type="text"],
+.prompt-details textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1em; /* Größere Schrift für bessere Lesbarkeit */
+}
+
+.prompt-details textarea {
+    min-height: 300px; /* Vorgefertigte Mindesthöhe für das Textarea */
+}
+
+.prompt-details input[type="text"]:focus,
+.prompt-details textarea:focus {
+    outline: none;
+    border-color: #6ea68f; /* Teal für Fokussierung */
+}
+
+/* Prompts Details Button */
+.prompt-details button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6ea68f; /* Teal Farbe */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.prompt-details button:hover {
+    background-color: #6200ee; /* Violett für Hover */
+}
+
+/* Markdown Liste */
+.markdown-list h1 {
+    font-size: 2em;
+    color: #6ea68f; /* Teal Farbe */
+    margin-bottom: 20px;
+}
+
+.markdown-list ul {
+    padding-left: 20px;
+}
+
+.markdown-list ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.markdown-list ul li a {
+    color: #6ea68f; /* Teal Farbe */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.markdown-list ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Chat Container */
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+#chat-output {
+    flex: 1;
+    padding: 10px;
+    background-color: #121212;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#chat-output p {
+    margin: 10px 0;
+    color: #e0e0e0;
+}
+
+#chat-output p.strong {
+    color: #6ea68f; /* Teal Farbe */
+}
+
+/* Input-Bereich */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+}
+
+#user-input:focus {
+    outline: none;
+    border: 1px solid #6ea68f; /* Teal für Fokussierung */
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #6ea68f; /* Teal Farbe */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #6200ee; /* Violett für Hover */
+}
+
+/* Buttons */
+button[type="submit"] {
+    background-color: #6ea68f; /* Teal Farbe */
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #6200ee; /* Violett für Hover */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Modal wird standardmäßig ausgeblendet */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    margin: 5% auto; /* Zentriert das Modal */
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 90%; /* Vergrößert die Breite des Fensters */
+    max-width: 1000px; /* Maximale Breite */
+}
+
+.modal-content h2 {
+    color: #6ea68f; /* Teal Farbe */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    background-color: #333;
+    color: #e0e0e0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #6ea68f; /* Teal Farbe für Hover */
+}
+
+/* Anpassung der Eingabeelemente im Modal */
+.modal-content input[type="text"],
+.modal-content textarea {
+    width: 100%; /* Nimmt die volle Breite ein */
+    padding: 15px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2em; /* Größere Schrift für bessere Lesbarkeit */
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content textarea:focus {
+    outline: none;
+    border-color: #6ea68f; /* Teal für Fokussierung */
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6ea68f; /* Teal Farbe */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #6200ee; /* Violett für Hover */
+}
