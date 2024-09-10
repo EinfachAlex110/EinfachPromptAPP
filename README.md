@@ -12,15 +12,17 @@ flask_app/
 ├── static/
 │   ├── styles.css            # Statische CSS-Datei für das Styling
 │   └── scripts.js            # Statische JavaScript-Datei für die Interaktivität
-│
+│   └── chat.js
 ├── templates/
 │   ├── index.html            # Hauptseite der App mit dem Prompt Manager
 │   └── chat.html             # Platzhalterseite für eine Chat-Funktion
-│
+│   └── markdown_edit.html
+    └── markdown_list.html
 ├── user_custom.json          # JSON-Datei mit den Prompts
 ├── app.py                    # Hauptanwendung in Flask
 ├── requirements.txt          # Python-Abhängigkeiten
-└── README.md                 # Dieses README-Dokument
+└── README.md
+└── vercel.json           # Dieses README-Dokument
 ```
 
 ## Voraussetzungen
