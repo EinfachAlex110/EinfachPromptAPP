@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/prompts">Prompts</a></li>
+                <li><a href="/chat">Chat</a></li>
+                <li><a href="#" id="toggle-add-prompt">Add New Prompt</a></li> 
+                <li><a href="/markdown">Markdown Dateien</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="chat-container">
+        <div id="chat-output" class="chat-window"></div> <!-- Chat-Fenster -->
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Schreiben Sie eine Nachricht..." />
+            <button id="send-button">Senden</button>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
