@@ -10,7 +10,7 @@ app = Flask(__name__)
 json_file_path = os.path.join(os.path.dirname(__file__), 'user_custom.json')
 
 # Pfad zum Markdown-Verzeichnis
-md_directory = r'/GPTLISTE/gpts'
+md_directory = r'/GPTLISTE'
 
 # JSON-Datei laden
 with open(json_file_path, 'r', encoding='utf-8') as file:

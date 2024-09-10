@@ -1,11 +1,11 @@
 /* Allgemeine Einstellungen */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #121212; /* Schwarz als Hintergrundfarbe */
+    color: #e0e0e0; /* Hellgrau für Text */
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Zentriert nur den Text im Body, nicht das gesamte Layout */
+    text-align: center; /* Zentriert nur den Text im Body */
 }
 
 /* Header */
@@ -14,9 +14,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #1f1f1f;
+    background-color: #242D29; /* Dunkles Grünlich-Grau für den Header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Text in Header bleibt linksbündig */
+    text-align: left;
 }
 
 /* Navigation */
@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f; /* Teal für Hover */
 }
 
 /* Header-Titel */
@@ -53,9 +53,10 @@ nav ul li a:hover {
     font-size: 3em;
     font-weight: bold;
     margin: 20px 0;
-    background: linear-gradient(90deg, #90deg, #ff0066, #ffcc00, #00ccff, #6ea68f); /* Ersetzt Lila */
+    background: linear-gradient(90deg, #6ea68f, #242D29, #e0e0e0, #6ea68f);
     background-size: 400%;
-    -webkit-background-clip: text;
+    background-clip: text; /* Standard */
+    -webkit-background-clip: text; /* Für Webkit-Browser */
     -webkit-text-fill-color: transparent;
     animation: gradientAnimation 5s ease infinite;
 }
@@ -106,14 +107,14 @@ nav ul li a:hover {
 }
 
 .prompt-item:hover {
-    background-color: #2b2b2b;
-    border-color: #6ea68f; /* Ersetzt Lila */
+    background-color: #242D29; /* Dunkles Grünlich-Grau für Hover */
+    border-color: #6ea68f; /* Teal für Hover */
 }
 
 .prompt-item h3 {
     margin: 0;
     font-size: 1.4em;
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f;
 }
 
 .prompt-item button {
@@ -128,7 +129,7 @@ nav ul li a:hover {
 }
 
 .prompt-item button:hover {
-    background-color: #6ea68f; /* Ersetzt Lila */
+    background-color: #6ea68f; /* Teal für Hover */
     color: #121212;
 }
 
@@ -140,12 +141,12 @@ nav ul li a:hover {
     border-radius: 10px;
     border: 1px solid #333;
     max-width: 600px;
-    margin-left: 20px; /* Abstand zur Liste */
+    margin-left: 20px;
 }
 
 .prompt-details h2 {
     font-size: 1.5em;
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f; /* Teal Farbe */
     margin-bottom: 20px;
 }
 
@@ -153,7 +154,7 @@ nav ul li a:hover {
     display: block;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f; /* Teal Farbe */
 }
 
 .prompt-details input[type="text"],
@@ -175,14 +176,14 @@ nav ul li a:hover {
 .prompt-details input[type="text"]:focus,
 .prompt-details textarea:focus {
     outline: none;
-    border-color: #6ea68f; /* Ersetzt Lila */
+    border-color: #6ea68f; /* Teal für Fokussierung */
 }
 
 /* Prompts Details Button */
 .prompt-details button {
     width: 100%;
     padding: 15px;
-    background-color: #6ea68f; /* Ersetzt Lila */
+    background-color: #6ea68f; /* Teal Farbe */
     color: #121212;
     border: none;
     border-radius: 5px;
@@ -191,13 +192,13 @@ nav ul li a:hover {
 }
 
 .prompt-details button:hover {
-    background-color: #6200ee;
+    background-color: #6200ee; /* Violett für Hover */
 }
 
-/* Markedown Liste */
+/* Markdown Liste */
 .markdown-list h1 {
     font-size: 2em;
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f; /* Teal Farbe */
     margin-bottom: 20px;
 }
 
@@ -211,7 +212,7 @@ nav ul li a:hover {
 }
 
 .markdown-list ul li a {
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f; /* Teal Farbe */
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -248,7 +249,7 @@ nav ul li a:hover {
 }
 
 #chat-output p.strong {
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f; /* Teal Farbe */
 }
 
 /* Input-Bereich */
@@ -268,12 +269,12 @@ nav ul li a:hover {
 
 #user-input:focus {
     outline: none;
-    border: 1px solid #6ea68f; /* Ersetzt Lila */
+    border: 1px solid #6ea68f; /* Teal für Fokussierung */
 }
 
 #send-button {
     padding: 10px 20px;
-    background-color: #6ea68f; /* Ersetzt Lila */
+    background-color: #6ea68f; /* Teal Farbe */
     color: #121212;
     border: none;
     border-radius: 5px;
@@ -282,12 +283,12 @@ nav ul li a:hover {
 }
 
 #send-button:hover {
-    background-color: #6200ee;
+    background-color: #6200ee; /* Violett für Hover */
 }
 
 /* Buttons */
 button[type="submit"] {
-    background-color: #6ea68f; /* Ersetzt Lila */
+    background-color: #6ea68f; /* Teal Farbe */
     color: #121212;
     padding: 10px 20px;
     border: none;
@@ -297,7 +298,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #6200ee;
+    background-color: #6200ee; /* Violett für Hover */
 }
 
 /* Modal */
@@ -319,12 +320,12 @@ button[type="submit"]:hover {
     padding: 20px;
     border: 1px solid #333;
     border-radius: 10px;
-    width: 90%; /* Vergroßert die Breite des Fensters */
+    width: 90%; /* Vergrößert die Breite des Fensters */
     max-width: 1000px; /* Maximale Breite */
 }
 
 .modal-content h2 {
-    color: #6ea68f; /* Ersetzt Lila */
+    color: #6ea68f; /* Teal Farbe */
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -341,7 +342,7 @@ button[type="submit"]:hover {
 }
 
 .close-button:hover {
-    background-color: #6ea68f; /* Ersetzt Lila */
+    background-color: #6ea68f; /* Teal Farbe für Hover */
 }
 
 /* Anpassung der Eingabeelemente im Modal */
@@ -360,13 +361,13 @@ button[type="submit"]:hover {
 .modal-content input[type="text"]:focus,
 .modal-content textarea:focus {
     outline: none;
-    border-color: #6ea68f; /* Ersetzt Lila */
+    border-color: #6ea68f; /* Teal für Fokussierung */
 }
 
 .modal-content button {
     width: 100%;
     padding: 15px;
-    background-color: #6ea68f; /* Ersetzt Lila */
+    background-color: #6ea68f; /* Teal Farbe */
     color: #121212;
     border: none;
     border-radius: 5px;
@@ -375,6 +376,5 @@ button[type="submit"]:hover {
 }
 
 .modal-content button:hover {
-    background-color: #6200ee;
+    background-color: #6200ee; /* Violett für Hover */
 }
-
