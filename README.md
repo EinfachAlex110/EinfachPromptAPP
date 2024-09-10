@@ -1,4 +1,4 @@
-![Alt-Text](URL-des-Bildes)
+![Alt-Text][(https://github.com/einfachalexgpt/EinfachPromptAPP/blob/main/Screenshot%202024-09-10%20180606.png)]
 
 # Prompt Manager Flask App
 
